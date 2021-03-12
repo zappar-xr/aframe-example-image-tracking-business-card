@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://libs.zappar.com/zappar-aframe/0.3.8/zappar-aframe.js"></script>
 
     <meta charset="utf-8" />
@@ -52,7 +52,7 @@
         <!-- CREATE A-FRAME CAMERA AND REPLACE IT WITH ZAPPAR'S CAMERA -->
         <!-- ALLOW USER TO CLICK ON ELEMENTS BY ADDING CURSOR COMPONENT & IDENTIFY RAYCASTER OBJECTS FOR BETTER PERFORMANCE -->
         <a-camera zappar-camera cursor="rayOrigin: mouse; fuse: false;" raycaster="objects: .collidable"></a-camera>
-        
+
         <!-- SET UP OUR EXPERIENCE AS IMAGE TRACKING & GIVE IT AN IMAGE TO TRACK -->
         <a-entity zappar-image="target: assets/BusinessCard.zpt">
             <!-- Have a group that will only become visible when the target image comes into view-->
@@ -61,7 +61,7 @@
                 <!-- REMEMBER - 3D OBJECTS TRACK FROM THE CENTER OF THE IMAGE -->
                 <!-- ANIMATED PLANE BACKGROUND -->
                 <a-image id="card-background" src="#card-plain" height="2" width="3" position="0 0 0" material="alpha-test:0.5"></a-image>
-                
+
                 <!-- NAME AND JOB TITLE -->
                 <a-entity id="name-and-title">
                     <a-entity id="name" text="font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt; value: Francesca Ellis; color: #FFF;" position="0.3 0 0" scale="3.5 3.5 3.5"></a-entity>
@@ -82,7 +82,7 @@
 
                 <!-- CALL TO ACTION TEXT -->
                 <a-entity id="cta" text="font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt; value: Tap on an icon to \n find out more!; color: #FFF; align: center;" position="-0.7 -0.5 0.3" scale="3 3 3"></a-entity>
-                
+
             </a-entity>
             <!-- END VISIBILITY CHANGER -->
         </a-entity>
